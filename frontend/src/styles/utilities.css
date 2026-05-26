@@ -1,0 +1,106 @@
+/* ============================================================
+   UTILITIES — Minimal, purposeful helpers.
+   These should NOT duplicate component styles.
+   Only truly reusable, single-property helpers live here.
+   ============================================================ */
+
+/* ── Display ── */
+.d-flex         { display: flex; }
+.d-grid         { display: grid; }
+.d-block        { display: block; }
+.d-none         { display: none; }
+
+/* ── Flex helpers ── */
+.flex-col       { flex-direction: column; }
+.flex-row       { flex-direction: row; }
+.flex-1         { flex: 1 1 0%; }
+.items-center   { align-items: center; }
+.items-start    { align-items: flex-start; }
+.justify-center { justify-content: center; }
+.justify-between{ justify-content: space-between; }
+.flex-wrap      { flex-wrap: wrap; }
+
+/* ── Width / Height ── */
+.w-full         { width: 100%; }
+.h-full         { height: 100%; }
+.w-fit          { width: fit-content; }
+.min-h-screen   { min-height: 100vh; }
+
+/* ── Margin auto helpers ── */
+.mx-auto        { margin-left: auto; margin-right: auto; }
+.mt-auto        { margin-top: auto; }
+
+/* ── Max widths ── */
+.max-w-sm       { max-width: var(--max-w-sm); }
+.max-w-md       { max-width: var(--max-w-md); }
+.max-w-lg       { max-width: var(--max-w-lg); }
+.max-w-xl       { max-width: var(--max-w-xl); }
+.max-w-2xl      { max-width: var(--max-w-2xl); }
+
+/* ── Text alignment ── */
+.text-left      { text-align: left; }
+.text-center    { text-align: center; }
+.text-right     { text-align: right; }
+
+/* ── Text colours (semantic only) ── */
+.text-primary   { color: var(--color-text-primary); }
+.text-secondary { color: var(--color-text-secondary); }
+.text-muted     { color: var(--color-text-muted); }
+.text-accent    { color: var(--color-accent); }
+.text-gold      { color: var(--color-gold); }
+.text-black     { color: #000; }
+
+/* ── Font weight ── */
+.fw-bold  { font-weight: var(--fw-bold); }
+.fw-black { font-weight: var(--fw-black); }
+
+/* ── Position ── */
+.relative       { position: relative; }
+.absolute       { position: absolute; }
+.fixed          { position: fixed; }
+.sticky         { position: sticky; }
+.inset-0        { inset: 0; }
+
+/* ── Z-index ── */
+.z-below        { z-index: var(--z-below); }
+.z-raised       { z-index: var(--z-raised); }
+.z-overlay      { z-index: var(--z-overlay); }
+.z-modal        { z-index: var(--z-modal); }
+
+/* ── Overflow ── */
+.overflow-hidden  { overflow: hidden; }
+.overflow-x-clip  { overflow-x: hidden; }
+
+/* ── Pointer events ── */
+.pointer-events-none { pointer-events: none; }
+
+/* ── User select ── */
+.select-none    { user-select: none; }
+
+/* ── Object fit ── */
+.object-cover   { object-fit: cover; }
+
+/* ── Aspect ratio ── */
+.aspect-square  { aspect-ratio: 1 / 1; }
+
+/* ── Opacity ── */
+.opacity-0      { opacity: 0; }
+.opacity-50     { opacity: 0.5; }
+.opacity-100    { opacity: 1; }
+
+/* ── Responsive visibility ── */
+@media (min-width: 768px) {
+  .md\:flex-row     { flex-direction: row; }
+  .md\:text-left    { text-align: left; }
+  .md\:mx-0         { margin-left: 0; margin-right: 0; }
+  .md\:items-start  { align-items: flex-start; }
+}
+
+@media (min-width: 1024px) {
+  .lg\:block  { display: block; }
+  .lg\:hidden { display: none; }
+}
+
+@media (max-width: 1023px) {
+  .lg\:block { display: none; }
+}

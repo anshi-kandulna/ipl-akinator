@@ -1,0 +1,142 @@
+/* ============================================================
+   DESIGN TOKENS — Single source of truth for the entire app.
+   All components reference these variables; never hard-code values.
+   ============================================================ */
+
+:root {
+  /* ---------- Colour Palette ---------- */
+  /* Backgrounds */
+  --color-bg-base:        #05070a;
+  --color-bg-card:        rgba(10, 14, 22, 0.92);
+  --color-bg-glass:       rgba(15, 20, 30, 0.7);
+  --color-bg-surface:     rgba(255, 255, 255, 0.03);
+  --color-bg-surface-hover: rgba(0, 242, 255, 0.06);
+
+  /* Accents */
+  --color-accent:         #00f2ff;     /* Cyan — primary brand colour */
+  --color-accent-dim:     rgba(0, 242, 255, 0.12);
+  --color-accent-glow:    rgba(0, 242, 255, 0.5);
+  --color-accent-strong:  rgba(0, 242, 255, 0.8);
+
+  --color-gold:           #f5c518;     /* Gold — FIFA card colour */
+  --color-gold-dark:      #ca8a04;
+  --color-gold-dim:       rgba(245, 197, 24, 0.2);
+  --color-gold-glow:      rgba(245, 197, 24, 0.5);
+
+  /* Status */
+  --color-status-yes:         #10b981;
+  --color-status-yes-dim:     rgba(16, 185, 129, 0.45);
+  --color-status-maybe:       #6b7280;
+  --color-status-no:          #f43f5e;
+  --color-status-no-dim:      rgba(244, 63, 94, 0.45);
+
+  /* Text */
+  --color-text-primary:   #ffffff;
+  --color-text-secondary: #a0aec0;
+  --color-text-muted:     #4a5568;
+  --color-text-accent:    var(--color-accent);
+  --color-text-gold:      var(--color-gold);
+
+  /* Borders */
+  --color-border-glass:   rgba(255, 255, 255, 0.10);
+  --color-border-subtle:  rgba(255, 255, 255, 0.05);
+  --color-border-accent:  rgba(0, 242, 255, 0.35);
+
+  /* ---------- Typography ---------- */
+  --font-sans:   'Outfit', system-ui, sans-serif;
+  --font-mono:   'JetBrains Mono', 'Fira Code', monospace;
+
+  --text-2xs:   0.625rem;   /* 10px */
+  --text-xs:    0.75rem;    /* 12px */
+  --text-sm:    0.875rem;   /* 14px */
+  --text-base:  1rem;       /* 16px */
+  --text-lg:    1.125rem;   /* 18px */
+  --text-xl:    1.25rem;    /* 20px */
+  --text-2xl:   1.5rem;     /* 24px */
+  --text-3xl:   1.875rem;   /* 30px */
+  --text-4xl:   2.25rem;    /* 36px */
+  --text-5xl:   3rem;       /* 48px */
+  --text-6xl:   3.75rem;    /* 60px */
+  --text-7xl:   4.5rem;     /* 72px */
+  --text-8xl:   6rem;       /* 96px */
+
+  --fw-regular:  400;
+  --fw-medium:   500;
+  --fw-semibold: 600;
+  --fw-bold:     700;
+  --fw-black:    900;
+
+  --lh-none:    1;
+  --lh-tight:   1.25;
+  --lh-snug:    1.4;
+  --lh-normal:  1.6;
+  --lh-relaxed: 1.75;
+
+  --ls-tightest: -0.05em;
+  --ls-tight:    -0.025em;
+  --ls-normal:   0;
+  --ls-wide:     0.08em;
+  --ls-wider:    0.15em;
+  --ls-widest:   0.25em;
+
+  /* ---------- Spacing Scale ---------- */
+  --space-px:   1px;
+  --space-0-5:  0.125rem;
+  --space-1:    0.25rem;
+  --space-2:    0.5rem;
+  --space-3:    0.75rem;
+  --space-4:    1rem;
+  --space-5:    1.25rem;
+  --space-6:    1.5rem;
+  --space-8:    2rem;
+  --space-10:   2.5rem;
+  --space-12:   3rem;
+  --space-16:   4rem;
+  --space-20:   5rem;
+  --space-24:   6rem;
+
+  /* ---------- Border Radius ---------- */
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   12px;
+  --radius-xl:   16px;
+  --radius-2xl:  20px;
+  --radius-3xl:  24px;
+  --radius-full: 9999px;
+
+  /* ---------- Shadows & Glows ---------- */
+  --shadow-card:    0 24px 64px rgba(0, 0, 0, 0.6);
+  --shadow-glass:   0 8px 32px rgba(0, 0, 0, 0.4);
+  --glow-accent:    0 0 20px var(--color-accent-glow);
+  --glow-accent-lg: 0 0 40px var(--color-accent-glow), 0 0 80px rgba(0, 242, 255, 0.15);
+  --glow-gold:      0 0 20px var(--color-gold-glow);
+  --glow-gold-lg:   0 0 40px var(--color-gold-glow), 0 0 80px rgba(245, 197, 24, 0.15);
+
+  /* ---------- Transitions ---------- */
+  --ease-out:   cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --duration-fast:   150ms;
+  --duration-base:   200ms;
+  --duration-slow:   350ms;
+  --duration-xslow:  600ms;
+
+  /* ---------- Z-Index Scale ---------- */
+  --z-below:     -1;
+  --z-base:       0;
+  --z-raised:     10;
+  --z-overlay:    20;
+  --z-modal:      30;
+  --z-hud:        40;
+
+  /* ---------- Layout ---------- */
+  --max-w-sm:   28rem;
+  --max-w-md:   36rem;
+  --max-w-lg:   48rem;
+  --max-w-xl:   64rem;
+  --max-w-2xl:  80rem;
+
+  /* ---------- Component-specific ---------- */
+  --player-card-w:  340px;
+  --player-card-h:  496px;
+  --header-h:       80px;
+}
