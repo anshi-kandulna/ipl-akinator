@@ -30,9 +30,7 @@ Under the hood, it runs **Bayesian inference** over a database of **462 IPL play
 
 | Questioning | Live Rankings | Player Reveal |
 |:-----------:|:-------------:|:-------------:|
-| ![Mascot asking questions](frontend/public/akinator-mascot-bg-removed.png) | *Top-5 candidates update in real-time as you answer* | *Animated card flip on final guess* |
-
-> 🎬 **[Insert demo GIF here]** — recommended: a 15-second screen recording showing a full round (e.g. thinking of MS Dhoni, correctly identified in 6 questions)
+| <img src="questioning.gif" width="220"/>| *Top-5 candidates update in real-time as you answer* | *Animated card flip on final guess* |
 
 </div>
 
