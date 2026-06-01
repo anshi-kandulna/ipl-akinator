@@ -30,7 +30,7 @@ Under the hood, it runs **Bayesian inference** over a database of **462 IPL play
 
 | Questioning | Live Rankings | Player Reveal |
 |:-----------:|:-------------:|:-------------:|
-| <img src="questioning.gif" width="220"/>| *Top-5 candidates update in real-time as you answer* | *Animated card flip on final guess* |
+| <img src="live.png" width="420"/>| *Top-5 candidates update in real-time as you answer* | *Animated card flip on final guess* |
 
 </div>
 
